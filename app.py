@@ -15,7 +15,7 @@ with open(file_path, "rb") as file:
 
 
 # Load the saved model
-model = pickle.load(open(r'C:\Users\chand\Downloads\22nd - slr with streamlit\22nd - slr with streamlit\linear_regression_model.pkl', 'rb'))
+# model = pickle.load(open(r'C:\Users\chand\Downloads\22nd - slr with streamlit\22nd - slr with streamlit\linear_regression_model.pkl', 'rb'))
 
 # Set the title of the Streamlit app
 st.title("Salary Prediction App")
