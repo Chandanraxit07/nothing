@@ -1,6 +1,18 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
+
+# Get the directory where app.py is located
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the pickle file
+file_path = os.path.join(current_dir, "linear_regression_model.pkl")
+
+# Load the pickle file
+with open(file_path, "rb") as file:
+    model = pickle.load(file)
+
 
 # Load the saved model
 model = pickle.load(open(r'C:\Users\chand\Downloads\22nd - slr with streamlit\22nd - slr with streamlit\linear_regression_model.pkl', 'rb'))
